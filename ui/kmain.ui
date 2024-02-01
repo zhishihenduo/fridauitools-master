@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>847</width>
+                <height>801</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>fridaUiTools</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QGridLayout" name="gridLayout">
+                <item row="0" column="0">
+                    <widget class="QTabWidget" name="tabWidget">
+                        <property name="currentIndex">
+                            <number>0</number>
+                        </property>
+                        <widget class="QWidget" name="tab_2">
+                            <attribute name="title">
+                                <string>主界面</string>
+                            </attribute>
+                            <layout class="QGridLayout" name="gridLayout_6">
+                                <item row="0" column="0">
+                                    <widget class="QGroupBox" name="groupBox">
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>0</width>
+                                                <height>150</height>
+                                            </size>
+                                        </property>
+                                        <property name="title">
+                                            <string>功能(附加进程后使用)</string>
+                                        </property>
+                                        <layout class="QGridLayout" name="gridLayout_4">
+                                            <item row="2" column="0">
+                                                <widget class="QPushButton" name="btnDumpPtr">
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>0</width>
+                                                            <height>40</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>dump指定地址</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="2" column="1">
+                                                <widget class="QPushButton" name="btnFart">
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>0</width>
+                                                            <height>40</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Fart</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="2" column="2">
+                                                <widget class="QPushButton" name="btnDumpDex">
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>0</width>
+                                                            <height>40</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>dump_dex加载class后调用</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="0" column="0">
+                                                <widget class="QPushButton" name="btnDumpSo">
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>0</width>
+                                                            <height>40</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>dump so</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="0" column="1">
+                                                <widget class="QPushButton" name="btnWallbreaker">
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>0</width>
+                                                            <height>40</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>WallBreaker</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="0" column="2">
+                                                <widget class="QPushButton" name="btnCallFunction">
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>0</width>
+                                                            <height>40</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>函数重放</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </item>
+                                <item row="1" column="0">
+                                    <widget class="QGroupBox" name="groupBox_2">
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>0</width>
+                                                <height>150</height>
+                                            </size>
+                                        </property>
+                                        <property name="title">
+                                            <string>hook多选(附加进程前使用)</string>
+                                        </property>
+                                        <layout class="QGridLayout" name="gridLayout_7">
+                                            <item row="0" column="0">
+                                                <layout class="QGridLayout" name="gridLayout_5">
+                                                    <item row="0" column="0">
+                                                        <widget class="QCheckBox" name="chkNetwork">
+                                                            <property name="text">
+                                                                <string>r0capture</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item row="0" column="1">
+                                                        <widget class="QCheckBox" name="chkJni">
+                                                            <property name="text">
+                                                                <string>jnitrace</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item row="0" column="2">
+                                                        <widget class="QCheckBox" name="chkJavaEnc">
+                                                            <property name="text">
+                                                                <string>java加解密</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item row="0" column="3">
+                                                        <widget class="QCheckBox" name="chkSslPining">
+                                                            <property name="text">
+                                                                <string>ssl pining</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item row="1" column="0">
+                                                        <widget class="QCheckBox" name="chkHookEvent">
+                                                            <property name="text">
+                                                                <string>hookEvent</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item row="1" column="1">
+                                                        <widget class="QCheckBox" name="chkRegisterNative">
+                                                            <property name="text">
+                                                                <string>RegisterNative</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item row="1" column="2">
+                                                        <widget class="QCheckBox" name="chkArtMethod">
+                                                            <property name="text">
+                                                                <string>ArtMethod</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item row="1" column="3">
+                                                        <widget class="QCheckBox" name="chkLibArt">
+                                                            <property name="text">
+                                                                <string>libArt</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item row="1" column="0">
+                                                <layout class="QHBoxLayout" name="horizontalLayout">
+                                                    <item>
+                                                        <widget class="QPushButton" name="btnMatchMethod">
+                                                            <property name="minimumSize">
+                                                                <size>
+                                                                    <width>0</width>
+                                                                    <height>40</height>
+                                                                </size>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>ZenTracer</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QPushButton" name="btnNatives">
+                                                            <property name="minimumSize">
+                                                                <size>
+                                                                    <width>0</width>
+                                                                    <height>40</height>
+                                                                </size>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>批量native</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QPushButton" name="btnStalker">
+                                                            <property name="minimumSize">
+                                                                <size>
+                                                                    <width>0</width>
+                                                                    <height>40</height>
+                                                                </size>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>stalker</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QPushButton" name="btnTuoke">
+                                                            <property name="minimumSize">
+                                                                <size>
+                                                                    <width>0</width>
+                                                                    <height>40</height>
+                                                                </size>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>脱壳</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QPushButton" name="btnCustom">
+                                                            <property name="enabled">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                            <property name="minimumSize">
+                                                                <size>
+                                                                    <width>0</width>
+                                                                    <height>40</height>
+                                                                </size>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>自定义</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QPushButton" name="btnPatch">
+                                                            <property name="enabled">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                            <property name="minimumSize">
+                                                                <size>
+                                                                    <width>0</width>
+                                                                    <height>40</height>
+                                                                </size>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>Patch</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </item>
+                                <item row="2" column="0">
+                                    <widget class="QTabWidget" name="groupLogs">
+                                        <property name="currentIndex">
+                                            <number>2</number>
+                                        </property>
+                                        <widget class="QWidget" name="tab_3">
+                                            <attribute name="title">
+                                                <string>操作日志</string>
+                                            </attribute>
+                                            <layout class="QGridLayout" name="gridLayout_3">
+                                                <item row="0" column="0">
+                                                    <widget class="QPlainTextEdit" name="txtLogs">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                        <widget class="QWidget" name="tab_5">
+                                            <attribute name="title">
+                                                <string>输出日志</string>
+                                            </attribute>
+                                            <layout class="QGridLayout" name="gridLayout_2">
+                                                <item row="0" column="0">
+                                                    <widget class="QPlainTextEdit" name="txtoutLogs">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                        <widget class="QWidget" name="tab_4">
+                                            <attribute name="title">
+                                                <string>当前hook列表</string>
+                                            </attribute>
+                                            <layout class="QGridLayout" name="gridLayout_9">
+                                                <item row="0" column="0">
+                                                    <widget class="QTableWidget" name="tabHooks">
+                                                        <property name="editTriggers">
+                                                            <set>QAbstractItemView::NoEditTriggers</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="0">
+                                                    <widget class="QFrame" name="frame">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::StyledPanel</enum>
+                                                        </property>
+                                                        <property name="frameShadow">
+                                                            <enum>QFrame::Raised</enum>
+                                                        </property>
+                                                        <layout class="QGridLayout" name="gridLayout_8">
+                                                            <item row="0" column="0">
+                                                                <widget class="QLabel" name="label">
+                                                                    <property name="text">
+                                                                        <string>别名：</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </item>
+                                                            <item row="0" column="1">
+                                                                <widget class="QLineEdit" name="txtSaveHooks"/>
+                                                            </item>
+                                                            <item row="0" column="2">
+                                                                <widget class="QPushButton" name="btnSaveHooks">
+                                                                    <property name="maximumSize">
+                                                                        <size>
+                                                                            <width>150</width>
+                                                                            <height>16777215</height>
+                                                                        </size>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>保存列表</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </item>
+                                                            <item row="0" column="3">
+                                                                <widget class="QPushButton" name="btnImportHooks">
+                                                                    <property name="maximumSize">
+                                                                        <size>
+                                                                            <width>150</width>
+                                                                            <height>16777215</height>
+                                                                        </size>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>导入JSON</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </item>
+                                                            <item row="1" column="0">
+                                                                <widget class="QLabel" name="label_2">
+                                                                    <property name="text">
+                                                                        <string>别名：</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </item>
+                                                            <item row="1" column="1">
+                                                                <widget class="QComboBox" name="cmbHooks"/>
+                                                            </item>
+                                                            <item row="1" column="2">
+                                                                <widget class="QPushButton" name="btnLoadHooks">
+                                                                    <property name="maximumSize">
+                                                                        <size>
+                                                                            <width>150</width>
+                                                                            <height>16777215</height>
+                                                                        </size>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>加载记录</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </item>
+                                                            <item row="1" column="3">
+                                                                <widget class="QPushButton" name="btnClearHooks">
+                                                                    <property name="maximumSize">
+                                                                        <size>
+                                                                            <width>150</width>
+                                                                            <height>16777215</height>
+                                                                        </size>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>清空列表</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </item>
+                                                        </layout>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab">
+                            <attribute name="title">
+                                <string>附加进程信息</string>
+                            </attribute>
+                            <layout class="QGridLayout" name="gridLayout_14">
+                                <item row="0" column="0">
+                                    <layout class="QHBoxLayout" name="horizontalLayout_2">
+                                        <item>
+                                            <widget class="QGroupBox" name="groupBox_3">
+                                                <property name="title">
+                                                    <string>module列表</string>
+                                                </property>
+                                                <layout class="QGridLayout" name="gridLayout_10">
+                                                    <item row="0" column="0">
+                                                        <widget class="QLineEdit" name="txtModule"/>
+                                                    </item>
+                                                    <item row="1" column="0">
+                                                        <widget class="QListWidget" name="listModules"/>
+                                                    </item>
+                                                </layout>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <layout class="QVBoxLayout" name="verticalLayout">
+                                                <item>
+                                                    <widget class="QPushButton" name="btnExport">
+                                                        <property name="text">
+                                                            <string>Export</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QPushButton" name="btnSymbol">
+                                                        <property name="text">
+                                                            <string>Symbol</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QPushButton" name="btnSymbolClear">
+                                                        <property name="text">
+                                                            <string>清空</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </item>
+                                        <item>
+                                            <widget class="QGroupBox" name="groupBox_5">
+                                                <property name="title">
+                                                    <string>符号</string>
+                                                </property>
+                                                <layout class="QGridLayout" name="gridLayout_12">
+                                                    <item row="0" column="0">
+                                                        <widget class="QLineEdit" name="txtSymbol"/>
+                                                    </item>
+                                                    <item row="1" column="0">
+                                                        <widget class="QListWidget" name="listSymbol"/>
+                                                    </item>
+                                                </layout>
+                                            </widget>
+                                        </item>
+                                    </layout>
+                                </item>
+                                <item row="1" column="0">
+                                    <layout class="QHBoxLayout" name="horizontalLayout_3">
+                                        <item>
+                                            <widget class="QGroupBox" name="groupBox_4">
+                                                <property name="title">
+                                                    <string>java类列表</string>
+                                                </property>
+                                                <layout class="QGridLayout" name="gridLayout_11">
+                                                    <item row="1" column="0">
+                                                        <widget class="QListWidget" name="listClasses"/>
+                                                    </item>
+                                                    <item row="0" column="0">
+                                                        <widget class="QLineEdit" name="txtClass"/>
+                                                    </item>
+                                                </layout>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <layout class="QVBoxLayout" name="verticalLayout_2">
+                                                <item>
+                                                    <widget class="QPushButton" name="btnMethod">
+                                                        <property name="text">
+                                                            <string>查询函数</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QPushButton" name="btnMethodClear">
+                                                        <property name="text">
+                                                            <string>清空</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </item>
+                                        <item>
+                                            <widget class="QGroupBox" name="groupBox_6">
+                                                <property name="title">
+                                                    <string>java函数</string>
+                                                </property>
+                                                <layout class="QGridLayout" name="gridLayout_13">
+                                                    <item row="1" column="0">
+                                                        <widget class="QListWidget" name="listMethod"/>
+                                                    </item>
+                                                    <item row="0" column="0">
+                                                        <widget class="QLineEdit" name="txtMethod"/>
+                                                    </item>
+                                                </layout>
+                                            </widget>
+                                        </item>
+                                    </layout>
+                                </item>
+                                <item row="2" column="0">
+                                    <widget class="QGroupBox" name="groupBox_7">
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>0</width>
+                                                <height>200</height>
+                                            </size>
+                                        </property>
+                                        <property name="title">
+                                            <string>其他信息（todo）</string>
+                                        </property>
+                                        <layout class="QGridLayout" name="gridLayout_16"/>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_6">
+                            <attribute name="title">
+                                <string>应用信息</string>
+                            </attribute>
+                            <widget class="QGroupBox" name="groupBox_8">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>20</y>
+                                        <width>795</width>
+                                        <height>301</height>
+                                    </rect>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>0</width>
+                                        <height>200</height>
+                                    </size>
+                                </property>
+                                <property name="title">
+                                    <string>手机当前应用信息</string>
+                                </property>
+                                <layout class="QGridLayout" name="gridLayout_17">
+                                    <item row="2" column="0">
+                                        <widget class="QLabel" name="label_8">
+                                            <property name="text">
+                                                <string>提示：这里显示的是移动端当前app的信息，非附加的app信息</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item row="0" column="0">
+                                        <widget class="QFrame" name="frame_3">
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>0</width>
+                                                    <height>200</height>
+                                                </size>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>QFrame::StyledPanel</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>QFrame::Raised</enum>
+                                            </property>
+                                            <layout class="QGridLayout" name="gridLayout_18">
+                                                <item row="3" column="0">
+                                                    <widget class="QLabel" name="label_12">
+                                                        <property name="text">
+                                                            <string>启动页面：</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="4">
+                                                    <widget class="QPushButton" name="btnFlush">
+                                                        <property name="text">
+                                                            <string>刷新</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="2" column="0">
+                                                    <widget class="QLabel" name="label_9">
+                                                        <property name="text">
+                                                            <string>当前视图：</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="0">
+                                                    <widget class="QLabel" name="label_10">
+                                                        <property name="text">
+                                                            <string>进程名：</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="3">
+                                                    <widget class="QLineEdit" name="txtPid">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="3">
+                                                    <widget class="QLineEdit" name="txtProcessName">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="0">
+                                                    <widget class="QLabel" name="label_11">
+                                                        <property name="text">
+                                                            <string>进程id：</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="2" column="3">
+                                                    <widget class="QLineEdit" name="txtCurrentFocus">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="3" column="3">
+                                                    <widget class="QLineEdit" name="txtComponent">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="3">
+                                                    <widget class="QLineEdit" name="txtBaseDir">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="0">
+                                                    <widget class="QLabel" name="label_13">
+                                                        <property name="text">
+                                                            <string>base路径：</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </widget>
+                        </widget>
+                        <widget class="QWidget" name="tab_7">
+                            <attribute name="title">
+                                <string>辅助功能</string>
+                            </attribute>
+                            <layout class="QGridLayout" name="gridLayout_19">
+                                <item row="0" column="0">
+                                    <widget class="QGroupBox" name="groupBox_9">
+                                        <property name="title">
+                                            <string>功能</string>
+                                        </property>
+                                        <layout class="QGridLayout" name="gridLayout_15">
+                                            <item row="0" column="0">
+                                                <widget class="QPushButton" name="btnFartOpBin">
+                                                    <property name="maximumSize">
+                                                        <size>
+                                                            <width>150</width>
+                                                            <height>60</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>fart处理bin数据</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="0" column="1">
+                                                <widget class="QPushButton" name="btnOpStalkerLog">
+                                                    <property name="enabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                    <property name="maximumSize">
+                                                        <size>
+                                                            <width>150</width>
+                                                            <height>60</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>stalker输出整理</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </item>
+                                <item row="1" column="0">
+                                    <widget class="QGroupBox" name="groupBox_10">
+                                        <property name="title">
+                                            <string>todo</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>847</width>
+                    <height>28</height>
+                </rect>
+            </property>
+            <widget class="QMenu" name="menufile">
+                <property name="title">
+                    <string>文件</string>
+                </property>
+                <addaction name="actionClearTmp"/>
+                <addaction name="actionClearLogs"/>
+                <addaction name="actionClearOutlog"/>
+                <addaction name="actionClearHookJson"/>
+            </widget>
+
+
+            <widget class="QMenu" name="menuedit">
+                <property name="title">
+                    <string>执行</string>
+                </property>
+                <widget class="QMenu" name="menuAttach">
+                    <property name="title">
+                        <string>附加进程1</string>
+                    </property>
+                    <addaction name="actionAttach"/>
+                    <addaction name="actionAttachName"/>
+                    <addaction name="actionSpawn"/>
+                </widget>
+                <widget class="QMenu" name="menu_frida_server">
+                    <property name="title">
+                        <string>启动frida-server</string>
+                    </property>
+                    <addaction name="actionFrida32Start"/>
+                    <addaction name="actionFrida64Start"/>
+                    <addaction name="actionFridax86Start"/>
+                    <addaction name="actionFridax64Start"/>
+                </widget>
+                <addaction name="menuAttach"/>
+                <addaction name="actionStop"/>
+                <addaction name="menu_frida_server"/>
+                <addaction name="menu_luocaca"/>
+            </widget>
+
+
+            <widget class="QMenu" name="menuhelp">
+                <property name="title">
+                    <string>帮助</string>
+                </property>
+                <addaction name="actionabort"/>
+            </widget>
+            <widget class="QMenu" name="menu">
+                <property name="title">
+                    <string>上传与下载</string>
+                </property>
+                <addaction name="actionPushFridaServer"/>
+                <addaction name="actionPushFridaServerX86"/>
+                <addaction name="actionPushFartSo"/>
+                <addaction name="actionPullDumpDexRes"/>
+                <addaction name="actionPullFartRes"/>
+                <addaction name="actionPullApk"/>
+            </widget>
+            <widget class="QMenu" name="menucmd">
+                <property name="title">
+                    <string>cmd切换</string>
+                </property>
+                <addaction name="actionSuC"/>
+                <addaction name="actionSu0"/>
+            </widget>
+            <widget class="QMenu" name="menu_2">
+                <property name="title">
+                    <string>连接方式</string>
+                </property>
+                <addaction name="actionUsb"/>
+                <addaction name="actionWifi"/>
+            </widget>
+            <addaction name="menufile"/>
+            <addaction name="menuedit"/>
+            <addaction name="menu"/>
+            <addaction name="menucmd"/>
+            <addaction name="menu_2"/>
+            <addaction name="menuhelp"/>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+        <action name="actionopen">
+            <property name="text">
+                <string>open</string>
+            </property>
+        </action>
+        <action name="actionexit">
+            <property name="text">
+                <string>exit</string>
+            </property>
+        </action>
+        <action name="actionabort">
+            <property name="text">
+                <string>关于我</string>
+            </property>
+        </action>
+        <action name="actionStop">
+            <property name="text">
+                <string>停止</string>
+            </property>
+        </action>
+        <action name="action">
+            <property name="text">
+                <string>附加当前进程</string>
+            </property>
+        </action>
+        <action name="action_2">
+            <property name="text">
+                <string>附加指定进程</string>
+            </property>
+        </action>
+        <action name="actionspwan">
+            <property name="text">
+                <string>spwan附加</string>
+            </property>
+        </action>
+        <action name="actionAttach">
+            <property name="text">
+                <string>附加当前进程</string>
+            </property>
+        </action>
+        <action name="actionAttachName">
+            <property name="text">
+                <string>附加指定进程</string>
+            </property>
+        </action>
+        <action name="actionSpawn">
+            <property name="text">
+                <string>spawn附加</string>
+            </property>
+        </action>
+        <action name="actionClearTmp">
+            <property name="text">
+                <string>清空缓存数据</string>
+            </property>
+        </action>
+        <action name="actionClearLogs">
+            <property name="text">
+                <string>清空日志文件</string>
+            </property>
+        </action>
+        <action name="actionClearOutlog">
+            <property name="text">
+                <string>清空输出日志</string>
+            </property>
+        </action>
+        <action name="actionPushFartSo">
+            <property name="text">
+                <string>上传fart.so到设备</string>
+            </property>
+        </action>
+        <action name="actionClearHookJson">
+            <property name="text">
+                <string>清空json列表</string>
+            </property>
+        </action>
+        <action name="actionPullDumpDexRes">
+            <property name="text">
+                <string>下载dump_dex结果</string>
+            </property>
+        </action>
+        <action name="actionPushFridaServer">
+            <property name="text">
+                <string>上传frida-server(arm,arm64)</string>
+            </property>
+        </action>
+        <action name="actionPullFartRes">
+            <property name="text">
+                <string>下载fart脱壳结果</string>
+            </property>
+        </action>
+        <action name="actionFrida32Start">
+            <property name="text">
+                <string>frida-server for arm</string>
+            </property>
+        </action>
+        <action name="actionFrida64Start">
+            <property name="text">
+                <string>frida-server for arm64</string>
+            </property>
+        </action>
+        <action name="actionSuC">
+            <property name="checkable">
+                <bool>true</bool>
+            </property>
+            <property name="checked">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>adb shell su -c</string>
+            </property>
+        </action>
+        <action name="actionSu0">
+            <property name="checkable">
+                <bool>true</bool>
+            </property>
+            <property name="checked">
+                <bool>false</bool>
+            </property>
+            <property name="text">
+                <string>adb shell su 0</string>
+            </property>
+        </action>
+        <action name="actionFridax86Start">
+            <property name="text">
+                <string>frida-server for x86</string>
+            </property>
+        </action>
+        <action name="actionFridax64Start">
+            <property name="text">
+                <string>frida-server for x64</string>
+            </property>
+        </action>
+        <action name="actionPullApk">
+            <property name="text">
+                <string>下载当前应用apk</string>
+            </property>
+        </action>
+        <action name="actionPushFridaServerX86">
+            <property name="text">
+                <string>上传frida-server(x86,x64)</string>
+            </property>
+        </action>
+        <action name="actionUsb">
+            <property name="checkable">
+                <bool>true</bool>
+            </property>
+            <property name="checked">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>usb连接</string>
+            </property>
+        </action>
+        <action name="actionWifi">
+            <property name="checkable">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>wifi连接</string>
+            </property>
+        </action>
+    </widget>
+    <resources/>
+    <connections/>
+    <slots>
+        <slot>base64_calc_encode()</slot>
+        <slot>base64_input_change()</slot>
+        <slot>select_file()</slot>
+        <slot>save_file()</slot>
+        <slot>hex_toggled()</slot>
+        <slot>url_input_change()</slot>
+        <slot>url_calc_encode()</slot>
+        <slot>reinstall_android()</slot>
+        <slot>start_frida32()</slot>
+        <slot>start_frida64()</slot>
+        <slot>start_ida32()</slot>
+        <slot>start_ida64()</slot>
+        <slot>start_gdb32()</slot>
+        <slot>start_gdb64()</slot>
+        <slot>kill_debug()</slot>
+        <slot>binformat_calc_str()</slot>
+        <slot>binformat_input_change()</slot>
+        <slot>hexdump_calc()</slot>
+        <slot>hexdump_input_change()</slot>
+        <slot>hexdump_cmb_change()</slot>
+        <slot>zlib_calc()</slot>
+        <slot>zlib_input_change()</slot>
+        <slot>varint_calc_encode()</slot>
+        <slot>varint_input_change()</slot>
+        <slot>oct_calc()</slot>
+        <slot>oct_input_change()</slot>
+        <slot>protoc_calc()</slot>
+        <slot>protoc_input_change()</slot>
+        <slot>asm_calc_encrypt()</slot>
+        <slot>asm_input_change()</slot>
+        <slot>crc32_calc()</slot>
+        <slot>crc32_input_change()</slot>
+        <slot>adler32_calc()</slot>
+        <slot>adler32_input_change()</slot>
+        <slot>md5_calc()</slot>
+        <slot>md5_input_change()</slot>
+        <slot>sha_calc()</slot>
+        <slot>sha_input_change()</slot>
+        <slot>aes_calc_encrypt()</slot>
+        <slot>aes_input_change()</slot>
+        <slot>hmac_calc()</slot>
+        <slot>hmac_input_change()</slot>
+        <slot>rc2_calc_encrypt()</slot>
+        <slot>rc2_input_change()</slot>
+        <slot>aes_decrypt_check()</slot>
+        <slot>aes_mode_change()</slot>
+        <slot>rsa_gen()</slot>
+        <slot>rsa_encrypt()</slot>
+        <slot>rsa_decrypt()</slot>
+        <slot>rsa_check_prikey()</slot>
+        <slot>rsa_check_pubkey()</slot>
+        <slot>rsa_check_context()</slot>
+        <slot>binformat_calc_bytes()</slot>
+        <slot>aes_calc_decrypt()</slot>
+        <slot>rc2_calc_decrypt()</slot>
+        <slot>base64_calc_decode()</slot>
+        <slot>url_calc_decode()</slot>
+        <slot>varint_calc_decode()</slot>
+        <slot>asm_calc_disasm()</slot>
+        <slot>zlib_calc_unzlib()</slot>
+        <slot>des_calc_encrypt()</slot>
+        <slot>des_calc_decrypt()</slot>
+    </slots>
+</ui>

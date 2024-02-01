@@ -1,0 +1,7 @@
+{
+  "name": "fridauitools-master",
+  "version": "1.0.0",
+  "dependencies": {
+    "frida-compile": "^16.1.8"
+  }
+}

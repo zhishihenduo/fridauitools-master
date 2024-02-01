@@ -1,0 +1,5 @@
+PyQt5==5.15.5
+PyQtWebEngine
+frida==16.0.11
+hexdump==3.3
+capstone==4.0.2

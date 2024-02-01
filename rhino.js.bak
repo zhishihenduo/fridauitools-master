@@ -1,0 +1,173 @@
+// common.log("我草无情");
+
+
+//  add hook   add hook   add hook -***-****  add hook   add hook   add hook
+
+//
+// common.findAndHookMethod(
+//     "com.fenbi.android.leo.exercise.math.orallist.activity.ExerciseOralActivity",
+//     "onCreate",
+//     ['android.os.Bundle'],
+//     function (HookedMethod) {
+//
+//         // let thisObject = HookedMethod.thisObject;
+//         var ExerciseOralActivity = HookedMethod.thisObject;
+//
+//         common.log("r = " + ExerciseOralActivity.r);
+//
+//
+// //let ExerciseOralActivity = Java.use("com.fenbi.android.leo.exercise.math.orallist.activity.ExerciseOralActivity");
+// // f14465r = ExerciseOralActivity.r.value;
+//
+//     }
+// );
+//  add hook   add hook   add hook -***-****  add hook   add hook   add hook
+
+
+/*----------------------------do invoke----------------------------------*/
+
+// com.stub.StubApp.getString2("15933")
+// common.toJson("luocaca");
+var luocaca;
+
+function setTim() {
+    common.log("luocaca: 开始 线程执行" + Thread);
+
+    common.runOnThread(function () {
+
+        for (i = 0; i < 50; i++) {
+            var res = Thread.sleep(1050);
+            common.log("延迟： " + res + " Thread class: " + Thread);
+            common.log("luocaca: " + luocaca);
+        }
+    })
+
+    common.runOnUiThread(function () {
+
+        common.toast("我是傻子");
+        common.log("我是傻子")
+    }, 5000)
+
+}
+
+function finadhook() {
+
+// common.log(android.app.ActivityThread.currentActivityThread()+"")
+
+    common.findAndHookMethod(
+        "com.fenbi.android.leo.activity.HomeActivity",
+        "onResume",
+        [],
+        function (HookedMethod) {
+            var obj = HookedMethod.thisObject;
+            luocaca = obj;
+            var args = HookedMethod.args;
+            var method = HookedMethod.method;
+            var result = HookedMethod.getResult();
+            common.log("obj:" + obj);
+            common.log("args:" + common.toJson(args) + " method: " + method);
+
+            common.log("luocaca: 开启倒计时")
+
+            setTim();
+        }
+    );
+
+}
+
+hookSetText = function () {
+    common.toast("尝试 hook  Set Text")
+
+    common.findAndHookMethod(
+        "android.widget.TextView",
+        "setText",
+        ['java.lang.CharSequence'],
+        function (HookedMethod) {
+            var obj = HookedMethod.thisObject;
+            var args = HookedMethod.args;
+            var method = HookedMethod.method;
+            var result = HookedMethod.getResult();
+
+            var txt = args[0];
+            args[0] = "大傻是大佬。。。 " + txt;
+            common.log("setText be hook " + args[0])
+        }
+    );
+
+
+}
+
+// hookSetText();
+
+//测试 导入类
+
+// dispatchInporPackages = function (pack: string) {
+//     var p = new String(pack);
+//     p = p.replace("import", "importClass");
+//     p = p.replace(" ", "(");
+//     p = p.replace(";", ")");
+//     common.importClass(p);
+//
+// }
+
+// System.out.println(new File("/sdcard/aaa").listFiles());
+
+
+common.log("----------分割线---------");
+
+//        common.toast(Log.getStackTraceString(new Throwable()));
+
+
+// var p = new String("import java.util.HashMap;");
+// p = p.replace("import", "importClass");
+// p = p.replace(" ", "(");
+// p = p.replace(";", ")");
+// common.importClass(p);
+
+
+// var mm = HashMap();
+// mm.put("aa", "点击按键");
+// mm.put("bb", "bb");
+// mm.put("cc", "cc");
+// mm.put("package", p);
+// common.toast(Gson().toJson(mm));
+// common.log("----------分割线---------");
+
+
+// common.getAllClassFromClassLoader();
+
+// dispatchInporPackages("import com.virjar.sekiro.demo.util.AppUtil;")
+
+// common.toast(AppUtil.get())
+
+common.toast("沃日，无情 他他他")
+
+// common.getCurrentActivity();
+// common.getlpparam().packageName;
+// common.toast(common.getlpparam().packageName)
+
+//
+// common.hookAllMethods(
+//     common.getCurrentActivity().getClass().getName(),
+//     'onResume',
+//     function (param) {
+//
+//         common.toast("这里设置微信余额： 99999999999");
+//
+//
+//     });
+
+
+// common.hookAllMethods(
+//     common.getCurrentActivity().getClass().getName(),
+//     "onResume",
+//     function (HookedMethod) {
+//         var obj = HookedMethod.thisObject;
+//         var args = HookedMethod.args;
+//         var method = HookedMethod.method;
+//         var result = HookedMethod.getResult();
+//         common.toast("这里设置微信余额： 8888");
+//
+//     }
+// );
+
